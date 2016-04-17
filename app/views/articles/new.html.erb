@@ -6,10 +6,9 @@
   <ul>
     <% @article.errors.full_messages.each do |msg| %>
     <li> <%= msg %> </li>
-    <% end %>
+
+  <% end %>
   </ul>
-
-
 <% end %>
 
 <%=	form_for @article do |f| %>
@@ -26,3 +25,5 @@
 
   </p>
 <% end %>
+
+<%= link_to "Back to article listing", articles_path %>
