@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
 
+  # inserts the set_article function in the edit, update, show and destroy methods
   before_action :set_article, only: [:edit, :update, :show, :destroy]
 
   def index
